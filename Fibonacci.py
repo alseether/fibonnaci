@@ -30,7 +30,7 @@ while sum != 15165 :
 	oneNumberAgo = currentNumber
 	fibNumber = str(currentNumber)
 	
-	if len(str(fibNumber)) >= 2012 :
+	if len(fibNumber) >= 2012 :
 		sum = 0
 		for i in range( 0,len(fibNumber) ) : 
 			sum += int(fibNumber[i])
