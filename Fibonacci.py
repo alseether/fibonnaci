@@ -44,7 +44,7 @@ while sum != 15165 :
 
 #print results
 result = "\nThe magic numbers are: "
-for i in range(2005,2012) :  #will return 2006-2012 digits
+for i in xrange(2005,2012) :  #will return 2006-2012 digits
 	result += fibNumber[i]
 	if i==2007 :
 		result += "-"
