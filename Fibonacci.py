@@ -30,7 +30,7 @@ while sum != 15165 :
 	oneNumberAgo = currentNumber
 	fibNumber = str(currentNumber)
 	
-	if len(str(fibNumber)) >= 2012 :
+	if len(fibNumber) >= 2012 :
 		sum = 0
 		for i in range( 0,len(fibNumber) ) : 
 			sum += int(fibNumber[i])
@@ -40,11 +40,12 @@ while sum != 15165 :
 		sys.stdout.write('. ')
 		sys.stdout.flush()
 	
+	#increment candy counter
 	d+=1
 
 #print results
 result = "\nThe magic numbers are: "
-for i in range(2005,2012) :  #will return 2006-2012 digits
+for i in xrange(2005,2012) :  #will return 2006-2012 digits
 	result += fibNumber[i]
 	if i==2007 :
 		result += "-"
