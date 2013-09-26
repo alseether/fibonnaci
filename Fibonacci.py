@@ -40,6 +40,7 @@ while sum != 15165 :
 		sys.stdout.write('. ')
 		sys.stdout.flush()
 	
+	#increment candy counter
 	d+=1
 
 #print results
